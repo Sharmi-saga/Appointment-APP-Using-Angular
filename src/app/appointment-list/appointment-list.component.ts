@@ -12,6 +12,9 @@ export class AppointmentListComponent  {
   newAppointmentDate : Date = new Date; 
   appointments : Appointment[] =[]
 
-
+  addAppointment()
+  {
+     alert( "Your Appointment Name and date :-" + this.newAppointmentTittle + " " + this.newAppointmentDate )
+  }
 
 }
