@@ -1,0 +1,59 @@
+.footer-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    color: #d0e1e8; /* Optional hover color for better UX */
+    text-decoration: underline;
+  }
+
+
+  .footer{
+    text-align: left;
+    margin-top: 150px;
+    overflow-y: hidden;
+  }
+  
+  .image-section {
+    position: relative;
+    background-image: url('https://assets.visitorscoverage.com/production/images/Visitor-Medical-vs-Trip-Insurance-Header.jpg?width=872');
+    background-size: cover; /* Makes the image cover the whole section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    height: 300px; /* Adjust the height as per your requirement */
+}
+
+.image-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(2, 13, 36, 0.5); /* Adds dark overlay */
+    z-index: 1; /* Ensures the overlay is above the background image but below any content */
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Ensures content appears above the overlay */
+    color: white; /* Ensures text is visible against the dark background */
+    padding: 20px; /* Adds some spacing around the text */
+    text-align: center; /* Centers the text */
+}
+
+    .card {
+        width: 1200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 100px; 
+        padding-left: 2%;
+        overflow: hidden;
+
+        margin: 20px;
+    }
+
+.logo{
+    margin: 10px;
+}
